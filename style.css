@@ -1,0 +1,165 @@
+/* -----------------tag-------------------- */
+
+body {
+    
+}
+main {
+    height: 1000px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "left right";
+}
+
+a {
+    color: aqua;
+    padding: 20px;
+    
+}
+a :hover{
+    color: yellow;
+}
+
+li {
+    list-style: none;
+    padding: 6px;
+}
+
+
+/* -------------------class------------------- */
+
+.left-content {
+    padding: 1rem;
+}
+
+img{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    margin-bottom: 0px;
+}
+
+.designation {
+    padding-bottom: 0.75rem;
+    margin:5px;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFDE;
+    border-bottom: 2.5px white solid;
+}
+
+.description {
+    font-size: 0.75rem;
+    padding: 1rem;
+    letter-spacing: 0.15rem;
+    line-height: 0.5cm;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact {
+    padding: 6px;
+    margin: 6px;
+}
+
+.c {
+    color: aqua;
+}
+
+.icon {
+    padding: 4px;
+    margin: 5px;
+}
+
+.skills {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+.skills-name {
+    padding: 1rem;
+    font-size: 0.75rem;
+
+}
+
+.left-section {
+    grid-area: left;
+    background-color: #395B64;
+    color: white;
+}
+
+.right-section {
+    grid-area: right;
+    
+}
+
+.right-main-content {
+    padding: 2rem 3rem;
+}
+
+.right-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+.about-me > p {
+    padding-left: 2rem;
+    font-weight: 500;
+    line-height: 0.6cm;
+    margin-bottom: 40px;
+}
+
+.education {
+    margin-bottom: 40px;
+}
+.education span,li {
+    padding-left: 2rem;
+}
+
+.training {
+    font-weight: 600;
+}
+
+#college {
+    text-transform: uppercase;
+    font-weight: 600;
+    /* padding-left: 1rem; */
+    margin-bottom: 2rem;
+}
+
+.achievements li {
+    padding-left: 2rem;
+    
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+    body {
+        text-align: center;
+    }
+    
+}
+
